@@ -19,6 +19,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 export const db = getFirestore(app);
+//when you login google popultes auth with the data e.g name
 export const auth = getAuth(app);
 export const provider = new GoogleAuthProvider(); //	The authentication method used ("password", "anonymous", "facebook", "github", "google", or "twitter").
 
